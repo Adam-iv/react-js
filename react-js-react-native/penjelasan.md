@@ -1,7 +1,81 @@
 🔹 React JS
+
 📌 Pengertian
+
 React JS adalah pustaka JavaScript open-source yang digunakan untuk membangun antarmuka pengguna (User Interface / UI), terutama untuk aplikasi web. React dikembangkan oleh Facebook dan dirilis pertama kali pada tahun 2013.
 React menggunakan pendekatan berbasis komponen, di mana UI dibagi menjadi bagian-bagian kecil dan dapat digunakan kembali. Ini membuat proses pengembangan lebih terstruktur dan efisien.
+
+🔍 React JS (React.js) 
+
+🔧 1. Arsitektur React JS
+
+React JS menggunakan arsitektur berbasis komponen. Ini berarti UI dibagi menjadi potongan-potongan kecil yang disebut komponen, yang dapat digunakan kembali.
+Contohnya:
+
+function Button(props) {
+  return <button>{props.label}</button>;
+}
+
+🔁 2. Virtual DOM
+
+Alih-alih memanipulasi DOM langsung (yang lambat), React membuat salinan virtual dari DOM (Virtual DOM). Ketika state berubah, React membandingkan virtual DOM sebelumnya dengan yang baru, lalu hanya mengubah bagian yang berbeda (diffing algorithm) — ini meningkatkan performa.
+
+💡 3. State dan Props
+
+State: Menyimpan data internal dalam komponen.
+
+Props: Digunakan untuk mengirim data dari satu komponen ke komponen lain.
+
+Contoh:
+
+function Greeting({ name }) {
+  return <h1>Hello, {name}</h1>;
+}
+
+🧠 4. Hooks (React 16.8 ke atas)
+
+Hooks memungkinkan kamu untuk menggunakan state dan lifecycle method di dalam komponen fungsi:
+
+Contoh useState:
+
+const [count, setCount] = useState(0);
+
+Contoh useEffect:
+
+useEffect(() => {
+  console.log('Component mounted or updated');
+}, [count]);
+
+
+🧱 5. React Ecosystem (Tambahan)
+
+React hanya fokus pada View Layer (V pada MVC). Untuk fitur tambahan:
+
+Routing: react-router-dom
+
+State Management: Redux, Zustand, Recoil
+
+Form Handling: Formik, React Hook Form
+
+Testing: Jest, React Testing Library
+
+
+🌐 6. Penggunaan React JS di Industri
+
+Digunakan oleh banyak perusahaan besar:
+
+Facebook (Meta)
+
+Instagram
+
+Netflix
+
+Airbnb
+
+Tokopedia
+
+Gojek (untuk web)
+
 ⚙️ Fitur Utama
 
 Component-Based Architecture
@@ -29,15 +103,73 @@ Hanya menangani bagian view (butuh library tambahan untuk routing dan state mana
 📌 Penggunaan React JS
 
 Digunakan untuk membangun aplikasi web interaktif seperti:
+
 Dashboard
+
 E-commerce
+
 Aplikasi media sosial
+
 Admin panel
 
+
+
 🔹 React Native
+
 📌 Pengertian
+
 React Native adalah framework open-source yang dikembangkan oleh Facebook pada tahun 2015. React Native memungkinkan developer membangun aplikasi mobile (iOS & Android) menggunakan JavaScript dan React.
 React Native menerjemahkan komponen React ke dalam komponen native di masing-masing platform (Android/iOS), sehingga aplikasi terasa seperti aplikasi asli (native).
+
+📱 React Native 
+
+🏗️ 1. Arsitektur React Native
+
+React Native memungkinkan kamu menulis komponen dengan JavaScript, tetapi saat dijalankan, komponen tersebut diubah menjadi komponen native sesuai platform:
+Misalnya:
+
+<Button title="Tekan Aku" onPress={handleClick} />
+
+Akan diterjemahkan menjadi UIButton (iOS) atau Button (Android).
+
+🔌 2. Bridge Architecture
+
+React Native menggunakan Bridge: jembatan antara JavaScript dan Native Modules. Saat aplikasi berjalan:
+
+UI ditulis dalam JavaScript
+
+JS dikompilasi ke native code menggunakan bridge (asynchronous dan serialized)
+
+Kelemahan: bisa menjadi bottleneck jika komunikasi JS-Native terlalu sering (contohnya animasi kompleks).
+
+🧰 3. Native Modules
+
+Jika ada fitur yang tidak didukung langsung oleh React Native (misalnya akses ke fitur khusus perangkat), kamu bisa menulis kode native di Java/Kotlin (Android) atau Swift/Objective-C (iOS) dan menghubungkannya ke JavaScript.
+
+🔁 4. Live Reload vs Hot Reload
+
+Live Reload: muat ulang seluruh aplikasi ketika file berubah.
+
+Hot Reload: hanya mengganti bagian kode yang berubah tanpa kehilangan state.
+
+💼 5. React Native di Dunia Nyata
+
+React Native digunakan oleh:
+
+Facebook
+
+Instagram
+
+Discord (iOS)
+
+Skype
+
+Bloomberg
+
+Shopee (beberapa bagian)
+
+Gojek (di beberapa fitur)
+
 ⚙️ Fitur Utama
 
 Write Once, Use on iOS and Android
@@ -118,64 +250,3 @@ Terbatas (melalui browser)
 Langsung ke perangkat (kamera, GPS)
 
 
-
-✅ Contoh Sederhana React JS
-Kita akan buat aplikasi web kecil yang menampilkan nama dan tombol untuk mengubahnya.
-📁 File: App.js
-jsxSalinEditimport React, { useState } from 'react';
-function App() {
-const [name, setName] = useState('AiMSTARMan');
-return (
-<div style={{ textAlign: 'center', marginTop: '50px' }}>
-<h1>Hello, {name}!</h1>
-<button onClick={() => setName('ProPlayer')}>
-Ganti Nama
-</button>
-</div>
-);
-}
-export default App;
-
-🧰 Tools:
-
-
-Bisa dijalankan di https://codesandbox.io/
-
-
-Atau jalankan dengan npx create-react-app namaproject
-
-
-
-✅ Contoh Sederhana React Native
-Kita akan buat aplikasi mobile kecil yang menampilkan teks dan tombol untuk mengubah teks tersebut.
-📁 File: App.js
-jsxSalinEditimport React, { useState } from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
-export default function App() {
-const [name, setName] = useState('AiMSTARMan');
-return (
-<View style={styles.container}>
-<Text style={styles.text}>Hello, {name}!</Text>
-<Button title="Ganti Nama" onPress={() => setName('ProPlayer')} />
-</View>
-);
-}
-const styles = StyleSheet.create({
-container: {
-flex: 1,
-justifyContent: 'center',
-alignItems: 'center'
-},
-text: {
-fontSize: 24,
-marginBottom: 20
-}
-});
-
-🧰 Tools:
-
-
-Jalankan di emulator menggunakan Expo Go atau dengan perintah:
-sqlSalinEditnpx create-expo-app namaproject
-cd namaproject
-npx expo start
