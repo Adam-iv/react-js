@@ -1,3 +1,72 @@
+REACT.JS
+
+React.js adalah library JavaScript yang digunakan untuk membangun antarmuka pengguna (user interfaces / UI), terutama untuk aplikasi web yang bersifat interaktif dan dinamis. React dikembangkan oleh Facebook dan pertama kali dirilis pada tahun 2013.
+
+
+---
+
+ Kenapa Menggunakan React.js?
+
+React populer karena beberapa alasan berikut:
+
+1. Komponen (Component-Based Architecture)
+UI dibagi menjadi bagian-bagian kecil (komponen) yang bisa digunakan kembali.
+
+
+2. Virtual DOM
+React menggunakan virtual DOM untuk meminimalkan interaksi langsung dengan DOM asli, sehingga membuat aplikasi lebih cepat dan efisien.
+
+
+3. One-Way Data Binding
+Alur data hanya satu arah, sehingga lebih mudah dikendalikan dan diprediksi.
+
+
+4. Ekosistem yang Kuat
+Banyak tools, library tambahan, dan komunitas besar yang mendukung pengembangan dengan React.
+
+
+5. React Native
+Kode yang sama (atau mirip) bisa digunakan untuk membuat aplikasi mobile menggunakan React Native.
+
+
+
+ Contoh Kode Sederhana
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function HelloWorld() {
+  return <h1>Hello, World!</h1>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<HelloWorld />);
+
+Tools Pendukung React
+
+Create React App: Untuk bootstrap project React dengan cepat.
+
+Vite: Alternatif modern dan cepat untuk memulai proyek React.
+
+React Router: Untuk navigasi halaman.
+
+Redux / Zustand / Recoil: Untuk manajemen state tingkat lanjut.
+
+Istilah Penting
+
+Istilah	Penjelasan Singkat
+
+JSX	Sintaks mirip HTML di dalam JavaScript
+Component	Bagian independen dari UI
+Props	Data yang dikirim ke komponen
+State	Data internal dari komponen
+Hooks	Fitur baru (sejak React 16.8) untuk pakai state, efek, dll
+
+
+
+
+
+
 PENJELASAN DODE.JS
 
 Node.js adalah sebuah runtime environment berbasis JavaScript yang memungkinkan Anda menjalankan kode JavaScript di luar browser, seperti di server. Dibangun di atas mesin V8 JavaScript Engine milik Google Chrome, Node.js dirancang untuk membuat aplikasi yang cepat, ringan, dan efisien, terutama untuk aplikasi berbasis jaringan.
