@@ -66,18 +66,24 @@ Node.js adalah lingkungan runtime JavaScript lintas platform yang memungkinkan A
 
 Implementasi Node.js:
 Node.js banyak digunakan dalam berbagai aplikasi, antara lain:
+
 Pengembangan Web:
 Node.js dapat digunakan untuk membangun aplikasi web dengan framework seperti Express.js atau Koa.js. 
 API:
 Node.js dapat digunakan untuk membangun RESTful API dan layanan mikro dengan mudah. 
+
 Aplikasi Real-Time:
 Node.js cocok untuk aplikasi real-time seperti obrolan, streaming langsung, dan permainan daring karena mendukung komunikasi dua arah. 
+
 Serverless Computing:
 Node.js sering digunakan dalam lingkungan serverless untuk menjalankan fungsi-fungsi sebagai respons terhadap peristiwa. 
+
 Internet of Things (IoT):
 Node.js dapat digunakan untuk membangun aplikasi IoT dengan framework seperti Cylon.js dan pustaka seperti Johnny-Five. 
+
 Alat Baris Perintah:
 Node.js dapat digunakan untuk membuat alat baris perintah yang kuat dan efisien. 
+
 Machine Learning:
 Node.js dapat digunakan untuk pengembangan model machine learning dengan pustaka seperti tfjs. 
 
