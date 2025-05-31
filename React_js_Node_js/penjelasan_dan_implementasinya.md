@@ -1,4 +1,5 @@
 Pengertian ReactJS
+
 ReactJS adalah library JavaScript popular yang dibuat oleh Facebook yang digunakan dalam proses pengembangan aplikasi mobile dan web. untuk memfasilitasi pembuatan daripada komponen antarmuka yang interaktif, stateful, serta mudah untuk digunakan ulang. ReactJS sangatlah cocok digunakan untuk rendering antarmuka yang kompleks dengan performa tinggi (Kumar & Singh, 2016).
 
 Dalam pengembangan, ReactJS memiliki berbagai macam kemampuan seperti dapat digunakan untuk membuat animasi suatu objek dengan efek transisi, menjalankan permainan di web browser yang sepenuhnya diprogram dengan menggunakan React. Selain itu, ReactJS juga mampu melakukan validasi form secara real-time saat pengguna mengisikan data pada form tersebut. Untuk melihat penggunaan ReactJS dalam sebuah situs, dapat menggunakan alat tambahan pada Google Chrome yang disebut React Developer Tools. Alat ini dapat mendeteksi apakah ReactJS digunakan atau tidak dalam sebuah web (M & Sonpatki, 2016).
@@ -59,8 +60,49 @@ const element = h1>Hello, world/h1>;
 ReactDOM.render(element, document.getElementById('root'));
 Setiap kali sebuah komponen React menghasilkan satu elemen, Virtual DOM akan memperbarui DOM asli agar sesuai.
 
+Pengertian Node.js
 
+Node.js adalah lingkungan runtime JavaScript lintas platform yang memungkinkan Anda menjalankan kode JavaScript di sisi server. Ini memungkinkan pengembang untuk membangun aplikasi backend, API, dan layanan mikro menggunakan JavaScript. Node.js juga memiliki ekosistem pustaka dan framework yang luas melalui Node Package Manager (NPM).
 
+Implementasi Node.js:
+Node.js banyak digunakan dalam berbagai aplikasi, antara lain:
+Pengembangan Web:
+Node.js dapat digunakan untuk membangun aplikasi web dengan framework seperti Express.js atau Koa.js. 
+API:
+Node.js dapat digunakan untuk membangun RESTful API dan layanan mikro dengan mudah. 
+Aplikasi Real-Time:
+Node.js cocok untuk aplikasi real-time seperti obrolan, streaming langsung, dan permainan daring karena mendukung komunikasi dua arah. 
+Serverless Computing:
+Node.js sering digunakan dalam lingkungan serverless untuk menjalankan fungsi-fungsi sebagai respons terhadap peristiwa. 
+Internet of Things (IoT):
+Node.js dapat digunakan untuk membangun aplikasi IoT dengan framework seperti Cylon.js dan pustaka seperti Johnny-Five. 
+Alat Baris Perintah:
+Node.js dapat digunakan untuk membuat alat baris perintah yang kuat dan efisien. 
+Machine Learning:
+Node.js dapat digunakan untuk pengembangan model machine learning dengan pustaka seperti tfjs. 
+
+Contoh Implementasi:
+Berikut contoh sederhana untuk membuat server HTTP dengan Node.js: 
+
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.write('<h1>Hello, World!</h1>');
+  res.end();
+});
+
+const port = 3000;
+server.listen(port, () => {
+  console.log(`Server berjalan di http://localhost:${port}`);
+});
+
+Untuk menjalankan contoh di atas: 
+Simpan kode di atas dalam file bernama app.js.
+Buka terminal dan navigasi ke direktori di mana file app.js disimpan.
+Jalankan perintah node app.js.
+Buka browser dan akses http://localhost:3000. Anda akan melihat pesan "Hello, World!".
+Node.js memberikan fleksibilitas yang besar dan ekosistem yang luas, menjadikannya pilihan populer untuk berbagai jenis aplikasi. 
 
 
 
