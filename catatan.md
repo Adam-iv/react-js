@@ -27,7 +27,7 @@ Contoh Sederhana:
 Berikut adalah contoh server sederhana menggunakan Node.js:
 
 
-Copy the code
+
 const http = require('http');
 
 const server = http.createServer((req, res) => {
