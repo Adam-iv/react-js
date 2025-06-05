@@ -1,0 +1,68 @@
+ *penjelasan React.js 
+    React.js adalah sebuah library java script open-source yang digunakan untuk membangun antar muka (user interface/UI).
+      React dikembangkan oleh facebook dan menjadi sangat populer di kalangan developer karena kemampuannya dalam menciptakan 
+      UI yang cepat,responsif,interaktif,dan mudah dikelola, terutama untuk aplikasi web berskala besar. React juga berfokus pada bagian 
+      "view" (tampilan) dari aplikasi. ini berarti anda bisa menggabungkannya dengan liberary atau framework lain untuk bagian-bagian lain 
+      dari aplikasi anda (seperti manajemen state atau routing.
+
+
+*konsep utama React.js 
+
+
+1. berbasis komponen (component-based):
+
+
+  . ini adalah inti dari React. React mendorong anda untuk memecah UI menjadi bagian-bagian kecil yang mandiri dan dapat digunakan
+    kembali,yang disebut "komponen"
+
+
+  . setiap komponen memiliki logika dan tampilannya sendiri. contoh komponen bisa berupa tombol, header, daftar item,form login,dll.
+
+
+2. Deklaratif (declarative)
+
+
+ . React bersifat deklaratif, artinya anda hanya perlu menyatakan apa yang ingin anda tampilkan (misalnya, "tampilkan daftar produk ini"), dan React
+   akan menangani bagaimana cara menampilkannya (manipulasi DOM)
+
+
+ . ini berbeda dengan pendekatan imperatif, di mana anda harus secara eksplisit memberi tahu browser langkah demi langkah bagaimana memperbarui DOM.
+
+
+3. Virtual DOM (Document Object Model)
+
+
+ . DOM adalah representasi struktur halaman web. manipulasi DOM  secara langsung bisa lambat, terutama untuk aplikasi yang sering memperbarui DOM.
+
+
+ . React menggunakan "Virtual DOM", yaitu salinan ringan dari DOM yang ada di memori.
+
+
+4. JSX (JavaScript XML)
+
+
+ . JSX adalah ekstensi sintaks java script yang memungkinkan anda menulis kode seperti HTML di dalam file javascript.
+
+
+ . ini memudahkan developer untuk menulis struktur UI dalam kode javascript yang sama dengan logika komponen.
+
+
+*fungsi utama React.js 
+
+
+ 1. Membangun komponen UI yang modular dan dapat digunakan kembali
+
+
+  . fungsi:ini adalah tulang punggung React. React memecah seluruh UI aplikasi menjadi unit-unit independen yang kecil,
+    mandiri, dan terisolasi,yang disebut "komponen".
+
+
+2. Mengelola State (data) aplikasi secara efisien 
+
+ .fungsi: React menyediakan mekanisme untuk mengelola data internal (state) dari setiap komponen.
+
+
+3. memperbarui tampilan (DOM) dengan performa tinggi melalui virtual DOM . 
+ 
+ 
+ . fungsi: ketika ada perubahan pada UI, React pertama-tama memperbarui virtual DOM ini. 
