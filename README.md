@@ -66,3 +66,14 @@ const element = h1>Hello, world/h1>;
 ReactDOM.render(element, document.getElementById('root'));
 ```
 Setiap kali sebuah komponen React menghasilkan satu elemen, Virtual DOM akan memperbarui DOM asli agar sesuai.
+
+## Cara Instal React
+
+1. Pastikan NodeJS telah terinstall sebelumnya, karena React JS nantinya berjalan sebagai UI, dengan NodeJS sebagai runtime.
+
+   ```
+   node -v
+   npm -v
+   npm install -g create-react-app
+   ```
+   
