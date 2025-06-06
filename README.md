@@ -71,6 +71,7 @@ Setiap kali sebuah komponen React menghasilkan satu elemen, Virtual DOM akan mem
 
 Pastikan NodeJS telah terinstall sebelumnya, karena React JS nantinya berjalan sebagai UI, dengan NodeJS sebagai runtime.
 
+Link Download ```https://nodejs.org/en```
    ```
    node -v
    npm -v
