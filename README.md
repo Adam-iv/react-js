@@ -69,7 +69,7 @@ Setiap kali sebuah komponen React menghasilkan satu elemen, Virtual DOM akan mem
 
 ## Cara Instal React
 
-1. Pastikan NodeJS telah terinstall sebelumnya, karena React JS nantinya berjalan sebagai UI, dengan NodeJS sebagai runtime.
+Pastikan NodeJS telah terinstall sebelumnya, karena React JS nantinya berjalan sebagai UI, dengan NodeJS sebagai runtime.
 
    ```
    node -v
@@ -77,3 +77,11 @@ Setiap kali sebuah komponen React menghasilkan satu elemen, Virtual DOM akan mem
    npm install -g create-react-app
    ```
    ![Tampilan UI](https://github.com/Adam-iv/react-js/blob/main/img/Screenshot%202025-06-07%20021343.png)
+
+Apabila proses install package selesai, Anda dapat melakukan pemeriksaan package menggunakan perintah berikut:
+
+   ```
+   $ create-react-app --version
+   ```
+   ![Tampilan UI](https://github.com/Adam-iv/react-js/blob/main/img/Screenshot%202025-06-07%20021353.png)
+
