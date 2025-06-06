@@ -28,3 +28,41 @@ State atau keadaan merupakan objek JavaScript yang mewakili satu bagian dari seb
 5. Navigasi Terprogram
 Navigasi terprogram adalah situasi di mana serangkaian kode menghasilkan sebuah tindakan yang mengarahkan pengguna ke area tertentu. Contohnya adalah dalam proses login dan mendaftar akun, dimana secara terprogram tindakan tersebut akan mengarahkan pengguna ke halaman baru.
 React Router merupakan library standar react untuk perutean yang menyediakan berbagai metode navigasi terprogram yang aman antar komponen tanpa mengharuskan user mengklik link apa pun.
+
+## Cara Kerja React
+
+
+Salah satu manfaat utama untuk menggunakan React adalah Anda bisa memasukkan kode HTML dengan JavaScript.
+User bisa membuat representasi node DOM dengan mendeklarasikan fungsi Element di React.kode di bawah ini, yang berisi kombinasi HTML dan JavaScript:
+
+```
+React.createElement("div", { className: "red" }, "Children Text");
+React.createElement(MyCounter, { count: 3 + 5 });
+```
+
+Anda mungkin menyadari bahwa sintaksis kode HTML di atas mirip dengan XML. Nah, tapi, bukannya menggunakan class DOM tradisional, React menggunakan className.
+Tag JSX memiliki nama, turunan, dan atribut. Ekspresi dan nilai numerik harus ditulis di dalam kurung kurawal. Tanda kutip dalam atribut JSX mewakili string, mirip dengan JavaScript.
+Biasanya, React ditulis menggunakan JSX dan bukan JavaScript standar untuk menyederhanakan komponen dan menjaga tampilan kode agar tetap rapi.
+Berikut adalah contoh kode React yang ditulis menggunakan JSX:
+```
+MyCounter count={3 + 5} />;
+var GameScores = {player1: 2,player2: 5};
+DashboardUnit data-index="2">
+h1>Scores/h1>Scoreboard className="results" scores={GameScores} />
+/DashboardUnit>;
+```
+Penjelasan tag HTML di atas adalah seperti berikut:
+
+```MyCounter>``` mewakili variabel yang disebut count yang nilainya adalah ekspresi numerik.
+GameScores adalah object literal yang memiliki dua pasangan prop-value.
+```DashboardUnit>```adalah block XML yang dirender di halaman.
+```scores={GameScores}``` adalah atribut skor, yang mendapatkan nilainya dari object literal GameScores tadi.
+Aplikasi React biasanya memiliki satu node DOM root. Merender elemen ke dalam DOM akan mengubah UI halaman.
+
+Sebagai contoh, kode berikut menampilkan “Hello World” di halaman dengan merender elemen menjadi node DOM yang disebut root.
+```
+div id="root">/div>
+const element = h1>Hello, world/h1>;
+ReactDOM.render(element, document.getElementById('root'));
+```
+Setiap kali sebuah komponen React menghasilkan satu elemen, Virtual DOM akan memperbarui DOM asli agar sesuai.
