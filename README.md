@@ -76,4 +76,4 @@ Setiap kali sebuah komponen React menghasilkan satu elemen, Virtual DOM akan mem
    npm -v
    npm install -g create-react-app
    ```
-   
+   ![Tampilan UI](https://github.com/Adam-iv/react-js/blob/main/img/Screenshot%202025-06-07%20021343.png)
